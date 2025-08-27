@@ -1,7 +1,7 @@
 <?php
 /**
  * EmailListVerify PHP SDK
- * PHP wrapper for EmailListVerify REST API
+ * Simple PHP wrapper for EmailListVerify REST API
  */
 
 namespace EmailListVerify;
@@ -10,14 +10,13 @@ use Exception;
 
 class EmailListVerifyException extends Exception {}
 
-class EmailListVerifyClient
+class EmailListVerify
 {
     const BASE_URL = 'https://apps.emaillistverify.com/api';
     const VERSION = '1.0.0';
     
     private $apiKey;
     private $timeout;
-    private $ch;
     
     /**
      * Initialize EmailListVerify client
